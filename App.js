@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Alert,StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, Alert, StyleSheet } from 'react-native'
 import { createSwitchNavigator, createAppContainer } from 'react-navigation'
 import Details from './screens/Details';
 import Home from './screens/Home';
@@ -14,9 +14,10 @@ export default function App() {
 }
 
 const SwitchNavigator = createSwitchNavigator({
-  Home:Home,
-  Details:Details,
-  UserDetails:UserDetails,
+  UserDetails: UserDetails,
+  Home: Home,
+  Details: Details,
+
 })
 
 const AppContainer = createAppContainer(SwitchNavigator)
@@ -24,6 +25,6 @@ const AppContainer = createAppContainer(SwitchNavigator)
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    
+
   },
 });
