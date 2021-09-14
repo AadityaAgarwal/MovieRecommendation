@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Alert } from 'react-native'
-import { Card, Icon, Header } from 'react-native-elements'
+import { Card } from 'react-native-elements'
 
 export default class Home extends React.Component {
     render() {
@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                         <Text style={{ textAlign: 'center', fontSize: 15 }}>Details</Text>
                     </Card>
                 </View>
-
+                <Text style={{marginBottom:100,marginLeft:20}}>Movie type: {this.props.navigation.getParam("movie_type")}</Text>
             </View>
         )
     }
